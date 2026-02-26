@@ -1,14 +1,13 @@
-import { Sparkles } from 'lucide-react';
+import { Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface LandingPageProps {
-  onResponse: (response: 'yes' | 'no') => void;
+  onResponse: (response: "yes" | "no") => void;
 }
 
 export default function LandingPage({ onResponse }: LandingPageProps) {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-rose-50 to-stone-50 flex items-center justify-center p-6 relative overflow-hidden">
-      {/* Sparkle effects */}
+    <div className="min-h-screen bg-linear-to-br from-amber-50 via-rose-50 to-stone-50 flex items-center justify-center p-6 relative overflow-hidden">
       {[...Array(5)].map((_, i) => (
         <div key={i} className={`sparkle sparkle-${i + 1}`}></div>
       ))}
@@ -35,23 +34,43 @@ export default function LandingPage({ onResponse }: LandingPageProps) {
               transition={{ delay: 0.3 }}
               className="text-4xl font-light text-stone-800 tracking-wide"
             >
-              Hi
+              Hi Lovelies 💕
             </motion.h1>
 
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="space-y-4 text-stone-700 leading-relaxed"
+              className="space-y-5 text-stone-700 leading-relaxed"
             >
               <p className="text-lg font-light">
-                You&apos;ve been specially selected by <span className="font-medium">Ruda</span> to celebrate her birthday with her.
+                <span className="font-medium">Rhoda is turning a year finer in a few days</span> 🤭✨
               </p>
+
               <p className="text-lg font-light">
-                She&apos;s not doing anything loud this year… just good food, good vibes, and her favorite people.
+                You’ve been specially selected to celebrate her birthday with her.
               </p>
-              <p className="text-xl font-light mt-8">
-                Would you like to join her for an intimate birthday dinner?
+
+              <p className="text-lg font-light">
+                And this year feels different.
+              </p>
+
+              <div className="space-y-2 pt-2">
+                <p className="text-lg font-light">✨ I’m choosing you.</p>
+                <p className="text-lg font-light">✨ I’m choosing intentional vibes.</p>
+                <p className="text-lg font-light">✨ I’m choosing fine dining and fine friends.</p>
+              </div>
+
+              <p className="text-lg font-light pt-4">
+                It’s going to be an intentional girls’ dinner with the people I genuinely love being around.
+              </p>
+
+              <p className="text-lg font-light">
+                Good food. Real conversations. Soft laughter. Main character energy.
+              </p>
+
+              <p className="text-xl font-light mt-6">
+                Would you like to join me? 👀💕
               </p>
             </motion.div>
           </div>
@@ -68,7 +87,7 @@ export default function LandingPage({ onResponse }: LandingPageProps) {
               onClick={() => onResponse("yes")}
               className="px-10 py-4 bg-rose-100 hover:bg-rose-200 text-rose-900 rounded-full font-light text-lg transition-all duration-300 border border-rose-200"
             >
-              💗 Yes, of course!
+              💗 Of course, I’m there!
             </motion.button>
 
             <motion.button
@@ -77,7 +96,7 @@ export default function LandingPage({ onResponse }: LandingPageProps) {
               onClick={() => onResponse("no")}
               className="px-10 py-4 bg-stone-100 hover:bg-stone-200 text-stone-700 rounded-full font-light text-lg transition-all duration-300 border border-stone-300"
             >
-              🙄 I don&apos;t like enjoyment
+              🙄 I don’t like enjoyment
             </motion.button>
           </motion.div>
         </div>
