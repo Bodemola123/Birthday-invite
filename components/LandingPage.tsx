@@ -34,7 +34,7 @@ export default function LandingPage({ onResponse }: LandingPageProps) {
               transition={{ delay: 0.3 }}
               className="text-4xl font-light text-stone-800 tracking-wide"
             >
-              Hi Lovelies 💕
+              Hi My Love 💕
             </motion.h1>
 
             <motion.div
