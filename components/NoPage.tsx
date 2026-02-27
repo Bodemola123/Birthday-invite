@@ -13,7 +13,7 @@ export default function NoPage({ onGoBack }: NoPageProps) {
         transition={{ duration: 0.6 }}
         className="max-w-2xl w-full bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-12 border border-stone-200/50"
       >
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-7">
 
           {/* Dramatic Emoji */}
           <motion.div
